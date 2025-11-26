@@ -1,0 +1,20 @@
+
+CREATE TABLE public.umbizo_citations (
+    citation_id                 BIGSERIAL PRIMARY KEY,
+    citation_text               TEXT,
+    pubmed_id                   VARCHAR(100),
+    doi                         VARCHAR(255),
+    created_date                TIMESTAMP,
+    url                         TEXT,
+    data_source                 VARCHAR(255),
+    citation_source             VARCHAR(255),
+    hash_id                     VARCHAR(255),
+    reviewer_id                 INTEGER,
+    review_status               VARCHAR(100),
+    review_assigned_date        TIMESTAMP,
+    review_completed_date       TIMESTAMP,
+    citation_count              INTEGER DEFAULT 0,
+    tier                        VARCHAR(50),
+    influential_citation_count  INTEGER DEFAULT 0,
+    fields_of_study             TEXT
+);
