@@ -1,0 +1,23 @@
+# Core
+requests==2.31.0
+beautifulsoup4==4.12.2
+PyPDF2==3.0.1
+
+# NLP
+scispacy==0.5.3
+https://download.scispacy.org/models/en_ner_bc5cdr_md-0.5.3.tar.gz
+sentence-transformers==2.2.2
+
+# SciSpaCy dependencies
+spacy==3.7.2
+numpy==1.26.2
+preshed==3.0.8
+blis==0.7.10
+thinc==8.2.1
+
+# Database
+psycopg2==2.9.9
+
+# Additional tools
+torch==2.2.0
+tqdm==4.66.1
